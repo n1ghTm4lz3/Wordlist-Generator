@@ -8,7 +8,7 @@ prefixes = ['0910', '0911', '0912', '0913', '0914', '0915', '0916', '0917', '091
 			] 
 for prefix in prefixes:
 	print("[+] Generating Prefix " + prefix + " Wordlist ...", end = '')
-	filename = "wordlists/Taiwan-cellphone/" + prefix
+	filename = "../wordlists/Taiwan-cellphone/" + prefix
 	with open(filename, 'w') as f:
 		for i in range(1000000):
 			number = prefix + "%06d" % i + "\n"
